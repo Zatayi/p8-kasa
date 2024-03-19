@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logements from "./Logements/logements.json";
-import Card from "./components/Cards";
+import logements from "../data/logements.json";
+import Card from "../components/Cards";
+
 
 const Gallery = () => {
   return (

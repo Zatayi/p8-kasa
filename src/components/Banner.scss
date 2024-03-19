@@ -1,7 +1,15 @@
 .banner-container {
 	height: 111px;
+	position: relative;
+	margin: 0 auto;
+	margin-bottom: 25px;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 15px;
+	filter: brightness(60%);
 	
 }
+
 
 .banner-text {
 	position: absolute;
@@ -14,6 +22,6 @@
 	line-height: 100%;
 	width: 217px;
 	height: 48px;
-
+	color: white;
 	
 }

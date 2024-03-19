@@ -1,8 +1,7 @@
-import "./Footer.scss"
 import logoKasa from "../assets/image/logo-footer.svg";
 
 
-const Footer= () => {
+const Footer = () => {
 	return (
 		<footer className="footer-section">
 			<img src={logoKasa} className="footer-logo" alt="Logo" />
