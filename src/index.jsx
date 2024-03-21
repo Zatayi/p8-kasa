@@ -7,7 +7,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Error from './pages/Error';
 import './styles/main.scss'
-//import Carrousel from './components/Carrousel';
+import Carrousel from './components/Carrousel';
 import Logement from './pages/Logement';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -21,6 +21,7 @@ root.render(
         <Route path="/about" element={<About />} />
         <Route path="*" element={<Error />} />
         <Route path="/Logement" element={<Logement />} />
+        <Route path="/Carrousel" element={<Carrousel />} />
       </Routes >
       <Footer />
       

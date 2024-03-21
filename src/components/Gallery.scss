@@ -37,3 +37,25 @@
 h2{
     text-decoration: none;
 }
+
+@media screen and (max-width: 800px) {
+
+.home_gallery {
+    
+    background-color: unset;
+    article{
+        margin-right: unset;
+        margin-left: unset;
+        height: 255px;
+        a{
+            display: flex;
+            height: 255px;
+            
+        }
+        img{
+            height: 165px;
+            width: 305px;
+        }
+    }
+}
+}

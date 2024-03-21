@@ -3,7 +3,9 @@
 }
 
 .errorNumber {
+    display: flex;
     align-items: center;
+    justify-content: center;
     margin: auto;
     font-family: montserrat;
     color: rgba(255, 96, 96, 1);
@@ -35,4 +37,19 @@
     text-decoration: underline;
     color: black;
 
+}
+
+@media screen and (max-width: 800px) {
+    .errorNumber {
+        width: 100%;
+        font-size: 96px;
+       margin-bottom: 20px;
+    }
+    .errorText {
+        font-size: 18px; 
+    }
+    .errorLinkHome {
+        font-size: 14px;
+        margin-bottom: 100px;
+    }
 }

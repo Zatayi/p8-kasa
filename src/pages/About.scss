@@ -95,3 +95,31 @@
         filter: brightness(60%);
 	}
 }
+@media screen and (max-width: 800px) {
+.collapse__toggle p {
+    color: black;
+    margin: 0;
+    padding: 10px 8px;
+    pointer-events: none;
+    font-family: montserrat;
+    font-size: 10px;
+}
+.banner-about img {
+    height: 111px;
+    
+}
+.about-style {
+    width: 90%;
+}
+.collapse__visible {
+    height: 30px;
+}
+h2{
+    font-size: 13px;
+}
+.chevron {
+    width: 16px;
+    
+}
+
+}
