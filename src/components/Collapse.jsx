@@ -1,30 +1,39 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect} from "react";
+import Chevron from "../assets/image/down-chevron.png"
 
-const Collapse = ({ title, content }) => {
-  const [isOpen, setIsOpen] = useState(false); 
-  const display = () => {
-    setIsOpen(!isOpen);
-  };
+export default function Collapse(props) {
+	const [toggle, setToggle] = useState(false); 
+	const [heightEl, setHeightEl] = useState(); 
 
-  return (
-    
-    <div className="collapse__dropdown__container">
-      <div className="collapse__dropdown__title">
-        <h2>{title}</h2>
-        <p onClick={display}>
-          {isOpen ? (
-            <i className="fa-solid fa-chevron-up"></i>
-          ) : (
-            <i className="fa-solid fa-chevron-down"></i>
-          )}
-        </p>
-      </div>
-    
-      <div className="collapse__dropdown__content">
-        {isOpen && <p>{content}</p>}
-      </div>
-    </div>
-  );
-};
+	const toggleState = () => {
+		
+		setToggle(!toggle);
+	};
 
-export default Collapse;
+	const refHeight = useRef(); 
+
+	useEffect(() => {
+		setHeightEl(`${refHeight.current.scrollHeight}px`);
+	}, []);
+
+	return (
+		
+		<div className={`collapse ${props.aboutStyle}`}>
+			<div onClick={toggleState} className="collapse__visible">
+				<h2>{props.title}</h2>
+				<img
+					className={toggle ? "chevron rotated" : "chevron"}
+					src={Chevron}
+					alt="chevron"
+				/>
+			</div>
+			<div
+				ref={refHeight}
+				className={toggle ? "collapse__toggle animated" : "collapse__toggle"}
+				style={{ height: toggle ? `${heightEl}` : "0px" }}
+			>
+				<p aria-hidden={toggle ? "true" : "false"}>{props.content}</p>
+			</div>
+		</div>
+	);
+}
