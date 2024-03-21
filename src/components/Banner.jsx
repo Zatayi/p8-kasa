@@ -1,4 +1,4 @@
-import BannerHome from "../assets/image/background-banner.png";
+import BannerHome from "../assets/image/Mask Group.png";
 
 export default function Banner() {
 	return (

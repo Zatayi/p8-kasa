@@ -1,18 +1,19 @@
 import React from "react";
-import Banner from "../components/Banner";
-import imgBannerAbout from "../assets/image/about-background.png";
+import ImgBannerAbout from "../assets/image/about-background.png";
 import Collapse from "../components/Collapse";
-import aboutList from '../data/aboutList.json'
+import AboutList from '../data/aboutList.json';
+import AboutBanner from "../components/Bannerabout";
+
 
 const About = () => {
   return (
     <div className="about">
       <main>
-        <Banner image={imgBannerAbout} titre="" />
-
+      <AboutBanner image={ImgBannerAbout} titre="" />
+      
         <div className="collapse">
           <div className="collapse__dropdown">
-            {aboutList.map((item) => {
+            {AboutList.map((item) => {
               return (
                 <div key={item.id}>
                   <Collapse content={item.content} title={item.title} />

@@ -1,0 +1,38 @@
+.errorContainer {
+	margin: 22px 6%;
+}
+
+.errorNumber {
+    align-items: center;
+    margin: auto;
+    font-family: montserrat;
+    color: rgba(255, 96, 96, 1);
+    font-size: 288px;
+    font-weight: 700;
+	width: 597px;
+    height: 263px;
+    margin-bottom: 150px;
+}
+
+.errorText {
+	font-family: montserrat;
+    font-size: 36px;
+	text-align: center;
+    color: rgba(255, 96, 96, 1);
+	margin: 0 11%;
+    margin-bottom: 90px;
+}
+
+.errorLinkHome {
+    display: flex;
+    justify-content: center;
+	font-family: montserrat;
+    font-size: 18px;
+    font-weight: 500;
+	text-decoration: none;
+	text-align: center;
+	margin: auto;
+    text-decoration: underline;
+    color: black;
+
+}

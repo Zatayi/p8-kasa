@@ -1,7 +1,9 @@
 .header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 40px;
+    margin-bottom: 40px;
     .logoheader{
         margin-left: 50px;
         height: 68px;
@@ -9,6 +11,18 @@
     }
     nav{
         margin-right: 40px;
+        a{
+            margin-right: 30px;
+            color: black;
+            text-decoration: none;
+            font-family: montserrat;
+            font-weight: 500;
+            &:hover,
+            &:focus,
+            &:active {
+                text-decoration: underline;
+            }
+        }
         ul{
             display:flex;
             li{
