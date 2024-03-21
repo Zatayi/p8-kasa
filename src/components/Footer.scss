@@ -3,20 +3,21 @@
 .footer {
     
 	&-section {
-		height: 12.5rem;
+		height: 209px;
 		margin-top: 40px;
 		background-color: #000000;
 		color: #ffffff;
 		text-align: center;
 	}
 	&-logo {
-		height: 2.25rem;
-		margin-top: 3.75rem;
+		height: 38px;
+		margin-top: 50px;
         
 	}
 	&-text {
+		font-family: montserrat;
 		margin-top: 2.5rem;
-		font-size: 0.75rem;
+		font-size: 20px;
 		font-weight: 500;
 		}
 	}

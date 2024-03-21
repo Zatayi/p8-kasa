@@ -1,66 +1,71 @@
 
 .collapse {
+    
 	width: 100%;
 	margin: 20px 0;
+        
 	&__visible {
-		background-color:  #ff6060;
+        
+		background-color:  rgba(255, 96, 96, 1);
 		color: #FFFFFF;
         font-family: montserrat;
 		cursor: pointer;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		height: 30px;
-		padding: 7px 15px;
+		height: 54px;
+		
 		border-radius: 5px;
 		width: 100%;
-        
+        h2{
+            padding-left: 15px;
+            font-weight: 700;
+        }
+        img{
+            margin-right: 10px;
+        }
 	}
 
 	&__toggle {
-        width: 103.2%;
+        width: 100%;
 		opacity: 0;
-		color: #ff6060;  
+		color: rgba(255, 96, 96, 1);  
 		background-color: #f7f7f7;
 		border-radius: 5px;
 		transition: opacity 0.4s ease-in-out, height 0.4s 0.4s ease-in-out;
-
+        
 		p {
             color: black;
 			margin: 0;
 			padding: 22px 15px;
 			pointer-events: none;
             font-family: montserrat;
-            font-size: 14px;
-			
+            font-size: 16px;
 		}
 	}
 }
 
 
 .animated {
-    width: 103.2%;
+    width: 100%;
 	opacity: 1;
 	transition: height 0.4s ease-in-out, opacity 0.4s 0.4s ease-in-out;
 }
 
 .chevron {
-	width: 19px;
+	width: 32px;
 	transform: rotate(0deg);
 	transition: 0.4s 0.4s ease-in-out;
     
-    img{
-        color: #f7f7f7;
-    }
+}
+.rotated {
+    transform: rotate(180deg);
+    transition: 0.4s ease-in-out;
+    
 }
 
-.rotated {
-	transform: rotate(180deg);
-	transition: 0.4s ease-in-out;
-}
 
 .about-style {
-    padding-right: 30px;
 	width: 80%;
     margin-right: auto;
     margin-left: auto;
