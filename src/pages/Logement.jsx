@@ -23,7 +23,7 @@ const Logement = () => {
 
 
     return (
-        <section>
+        <section className='principal__logement'>
             <Carrousel slides={datalogement?.pictures}></Carrousel>
 
             <section className="Fiche-logement">

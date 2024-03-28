@@ -2,6 +2,8 @@ section #carrousel-container{
     height: 415px;
     width: 100%;
     margin-bottom: 148px;
+    margin-top: -80px;
+    
    
     
     .leftArrow{
@@ -21,6 +23,13 @@ section #carrousel-container{
     }
     .slider-active-anim{
         height: 415px;
+        border-radius: 15px;
+        .slider__number{
+            position: relative;
+            color: white;
+            top: -25px;
+            left: 50%;
+        }
         img{
             display: flex;
             justify-content: center;

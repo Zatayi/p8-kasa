@@ -37,7 +37,7 @@ export default function Carrousel({ slides }) {
 					className={
 						current === index
 							? "slider-active-anim"
-							: "slider bl-msk wh-msk"
+							: "slider-compteur"
 					}
 				>
 					{index === current && <img src={slide} alt="appartement à louer" />}
