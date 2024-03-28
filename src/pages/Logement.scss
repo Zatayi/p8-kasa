@@ -1,6 +1,8 @@
 .principal__logement{
     margin-right: 6.5%;
     margin-left: 6.5%;
+    margin-top: 120px;
+    
     .Fiche-logement{
         .description-info{
             display: flex;
@@ -74,6 +76,9 @@
 }
 
 @media screen and (max-width: 800px) {
+    .principal__logement{
+        margin-top: unset;
+    }
     .titre-logement{
         font-size: 18px;
     }
