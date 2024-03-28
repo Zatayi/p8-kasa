@@ -3,7 +3,9 @@ section #carrousel-container{
     width: 100%;
     margin-bottom: 148px;
     margin-top: -80px;
-    
+    img{
+        border-radius: 25px;
+    }
    
     
     .leftArrow{
@@ -27,7 +29,7 @@ section #carrousel-container{
         .slider__number{
             position: relative;
             color: white;
-            top: -25px;
+            top: -45px;
             left: 50%;
         }
         img{
@@ -42,3 +44,25 @@ section #carrousel-container{
     }    
 }
 
+@media screen and (max-width: 800px) {
+section #carrousel-container {
+    margin-bottom: -120px;
+    margin-top: 40px;
+    .leftArrow{
+        top:35%;
+        left: 2%;
+        height: 24px;
+        width: 24px;
+    }
+    .rightArrow{
+        top:35%;
+        left: 85%;
+        height: 24px;
+        width: 24px;
+    }
+    .slider-active-anim img{
+        height: 255px;
+        border-radius: 15px;
+}
+}
+}

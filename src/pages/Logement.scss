@@ -1,30 +1,32 @@
 .principal__logement{
     margin-right: 6.5%;
     margin-left: 6.5%;
+    .Fiche-logement{
+        .description-info{
+            display: flex;
+            justify-content: space-between;
+                .description-info__titletags__title{
+                    display: flex;
+                    flex-direction: column;
+                    font-family: montserrat;
+                    font-weight: 500;
+                }
+        }
+       
+    }
 }
 
 .collapse__logement{
     display: flex;
     justify-content:space-between;
     .description__collapse{
-        width: 40%;
+        width: 47%;
     }
     .equipement__collapse{
-        width: 40%;
+        width: 47%;
     }
 }
-.description-info{
-    display: flex;
-    justify-content: space-between;
-    
-        
-        .description-info__titletags__title{
-            display: flex;
-            flex-direction: column;
-            font-family: montserrat;
-            font-weight: 500;
-        }
-}
+
 .titre-logement{
     color: #ff6060;
     font-size: 36px;
@@ -56,6 +58,7 @@
 }
 
 .description-info__proprietaire__nom{
+    gap: 10px;
     display: flex;
     align-items: center;
     color:#ff6060;
@@ -63,8 +66,59 @@
     font-size: 18px;
     font-weight: 500;
     img{
+        
         height: 64px;
         border-radius: 100%;
         object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .titre-logement{
+        font-size: 18px;
+    }
+    .endroit-logement{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .description-info{
+        flex-direction: column;
+        
+    }
+    .description-info__proprietaire{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        .nom_proprio{
+            font-size: 12px;
+        }
+        .photo_proprio{
+        height: 32px;
+        }
+        .star{
+            height: 18px;
+        }
+    }
+    .collapse__logement{
+        flex-direction: column;
+        .description__collapse{
+            width: 100%;
+            margin-bottom: -40px;
+        }
+        .equipement__collapse{
+            width: 100%;
+        }
+    }
+    .tags{
+        .tag-container__button{
+            height: 18px;
+            width: 87px;
+            font-size: 9px;
+            padding: unset;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            margin-top: -20px;
+        }
     }
 }

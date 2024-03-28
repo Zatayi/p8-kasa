@@ -37,10 +37,10 @@ export default function Carrousel({ slides }) {
 					className={
 						current === index
 							? "slider-active-anim"
-							: "slider-compteur"
+							: "slider-inact"
 					}
 				>
-					{index === current && <img src={slide} alt="appartement à louer" />}
+					{index === current && <img src={slide} alt="appartement en location" />}
 					{index === current && (
 						<span className="slider__number">
 							{current + 1}/{length}
