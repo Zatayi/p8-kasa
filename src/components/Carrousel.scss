@@ -1,0 +1,35 @@
+section #carrousel-container{
+    height: 415px;
+    width: 100%;
+    margin-bottom: 148px;
+   
+    
+    .leftArrow{
+        width: 46px;
+        height: 79px;
+        position:relative;
+        top: 60%;
+        left: 10%;
+    }
+    .rightArrow{
+        
+        position: relative;
+        top: 60%; 
+        left: 75%;
+        width: 46px;
+        height: 79px;
+    }
+    .slider-active-anim{
+        height: 415px;
+        img{
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            width: 1240px;
+            object-fit: cover;
+            height: 415px;
+            width: 100%;
+        }
+    }    
+}
+

@@ -36,7 +36,7 @@ export default function Carrousel({ slides }) {
 					key={index} 
 					className={
 						current === index
-							? "slider bl-msk wh-msk active-anim"
+							? "slider-active-anim"
 							: "slider bl-msk wh-msk"
 					}
 				>

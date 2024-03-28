@@ -1,0 +1,56 @@
+.collapse__logement{
+    display: flex;
+    justify-content:space-around;
+    .description__collapse{
+        width: 40%;
+    }
+    .equipement__collapse{
+        width: 40%;
+    }
+}
+.description-info{
+    display: flex;
+    justify-content: space-around;
+    .description-info__tags{
+        display: flex;
+        flex-direction: column;
+        margin-top: 120px;
+    }
+}
+
+.tags{
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.tag-container__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #ff6060;
+    border-radius: 10px;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: montserrat;
+    width: 115px;
+    height: 25px;
+}
+
+.description-info__proprietaire__nom{
+    display: flex;
+    align-items: center;
+    color:#ff6060;
+    font-family: montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    
+    margin-right: 65px;
+    img{
+        height: 64px;
+        border-radius: 100%;
+        object-fit: cover;
+    }
+}

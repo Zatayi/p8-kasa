@@ -6,7 +6,7 @@
     background-color: #F6F6F6;
     border-radius: 25px;
     article{
-        background: linear-gradient(#ff6060, #ff6060, rgb(168, 41, 41));
+        
         height: 340px;
         width: 340px;
         border-radius: 10px;
@@ -15,17 +15,19 @@
         margin-right: 25px;
         margin-left: 25px;
         img{
-            margin-left: 17px;
-            margin-top: 15px;
-            width: 90%;
+            
+            
+            width: 100%;
             border-radius: 10px;
-            height: 255px;
+            height: 340px;
             object-fit: cover;
         
         }
     }
 }
 .card_title {
+    position: relative;
+    top: -70px;
     margin-left: 17px;
     height: 80px;
     text-decoration: none;
@@ -41,9 +43,11 @@ h2{
 @media screen and (max-width: 800px) {
 
 .home_gallery {
-    
+    margin: auto;
+    width: 325px;
     background-color: unset;
     article{
+        margin-bottom: unset;
         margin-right: unset;
         margin-left: unset;
         height: 255px;
@@ -53,9 +57,19 @@ h2{
             
         }
         img{
-            height: 165px;
-            width: 305px;
+            height: 255px;
+            width: 335px;
         }
     }
+
 }
+.card_title {
+    
+    top: -60px;
+    font-size: 14px;   
+}
+}
+
+body{
+    margin: unset;
 }
