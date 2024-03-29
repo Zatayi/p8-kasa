@@ -63,6 +63,9 @@ section #carrousel-container {
     .slider-active-anim img{
         height: 255px;
         border-radius: 15px;
-}
+    }
+    .slider__number{
+        display: none;
+    }
 }
 }
