@@ -43,7 +43,9 @@ export default function Carrousel({ slides }) {
 					{index === current && <img src={slide} alt="appartement en location" />}
 					{index === current && (
 						<span className="slider__number">
-							{current + 1}/{length}
+						
+							
+						{current + 1}/{length}
 						</span>
 					)}
 				</div>

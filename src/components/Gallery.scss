@@ -5,6 +5,7 @@
     justify-content: space-around;
     background-color: #F6F6F6;
     border-radius: 25px;
+    gap: 30px;
     article{
         
         height: 340px;
@@ -14,9 +15,10 @@
         margin-bottom: 25px;
         margin-right: 25px;
         margin-left: 25px;
+        a{
+            text-decoration: unset;
+        }
         img{
-            
-            
             width: 100%;
             border-radius: 10px;
             height: 340px;
@@ -43,8 +45,11 @@ h2{
 @media screen and (max-width: 800px) {
 
 .home_gallery {
-    margin: auto;
-    width: 325px;
+    display: flex;
+    justify-content: center;
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
     background-color: unset;
     article{
         margin-bottom: unset;
@@ -54,11 +59,14 @@ h2{
         a{
             display: flex;
             height: 255px;
-            
+            .card{
+                width: 100%;
+                margin: auto;
+            }
         }
         img{
             height: 255px;
-            width: 335px;
+            
         }
     }
 
