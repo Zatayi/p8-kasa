@@ -15,14 +15,15 @@ section #carrousel-container{
         position:absolute;
         top: 40%;
         left: 25px;
+        cursor: pointer;
     }
     .rightArrow{
-        
         position: absolute;
         top: 40%; 
         right: 25px;
         width: 46px;
         height: 79px;
+        cursor: pointer;
     }
     .slider-active-anim{
         height: 415px;
