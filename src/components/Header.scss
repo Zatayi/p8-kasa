@@ -35,6 +35,9 @@
     }
 }
 @media screen and (max-width: 800px) {
+.header{
+    margin-right: unset;
+}
 .header nav{
     a {
         text-transform: uppercase;
