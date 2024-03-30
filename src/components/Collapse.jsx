@@ -28,3 +28,4 @@ export default function Collapse(props) {
 		</div>
 	);
 }
+

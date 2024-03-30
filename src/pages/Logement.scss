@@ -23,6 +23,7 @@
     justify-content:space-between;
     .description__collapse{
         width: 47%;
+        margin-bottom: -25px;
     }
     .equipement__collapse{
         width: 47%;
@@ -42,6 +43,7 @@
     gap: 10px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .tag-container__button{
     display: flex;
@@ -87,7 +89,15 @@
         margin-top: 10px;
     }
     .description-info{
+        display: flex;
         flex-direction: column;
+        .description-info__tags{
+            display: flex;
+            flex-direction: column;
+            .tag-container{
+                display: flex;
+            }
+        }
         
     }
     .description-info__proprietaire{
