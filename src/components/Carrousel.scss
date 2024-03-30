@@ -1,4 +1,5 @@
 section #carrousel-container{
+    position:relative;
     height: 415px;
     width: 100%;
     margin-bottom: 120px;
@@ -11,15 +12,15 @@ section #carrousel-container{
     .leftArrow{
         width: 46px;
         height: 79px;
-        position:relative;
-        top: 60%;
-        left: 10%;
+        position:absolute;
+        top: 40%;
+        left: 25px;
     }
     .rightArrow{
         
-        position: relative;
-        top: 60%; 
-        left: 75%;
+        position: absolute;
+        top: 40%; 
+        right: 25px;
         width: 46px;
         height: 79px;
     }
@@ -49,14 +50,14 @@ section #carrousel-container {
     margin-bottom: -120px;
     margin-top: 40px;
     .leftArrow{
-        top:35%;
-        left: 2%;
+        top:30%;
+        left: 15px;
         height: 24px;
         width: 24px;
     }
     .rightArrow{
-        top:35%;
-        left: 85%;
+        top:30%;
+        right: 15px;
         height: 24px;
         width: 24px;
     }
