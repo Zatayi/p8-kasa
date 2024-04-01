@@ -76,7 +76,9 @@
         object-fit: cover;
     }
 }
-
+.rate-comp{
+    display: flex;
+}
 @media screen and (max-width: 800px) {
     .principal__logement{
         margin-top: unset;
