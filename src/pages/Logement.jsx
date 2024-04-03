@@ -18,10 +18,6 @@ const Logement = () => {
         return <Error404 />
     }
 
-   
-
-
-
     return (
         <section className='principal__logement'>
             <Carrousel slides={datalogement?.pictures}></Carrousel>
